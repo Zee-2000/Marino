@@ -1,3 +1,6 @@
+
+* {box-sizing: border-box}
+body{font-family: 'Times New Roman', Times, serif;}
 h1,h2,p{
     text-align: center;
 }
@@ -86,4 +89,80 @@ img{
     margin-right:auto;
     margin-top:-25px;
 
+}
+.navbar
+{
+    width: 100%;
+    background-color: greenyellow;
+    overflow: auto;
+}
+.navbar a
+{
+    float: left;
+    padding:14px;
+    color: blue;
+    font-size: larger;
+    width: 20%;
+    text-align: center;
+}
+.navbar a:hover
+{
+    background-color: chocolate;
+}
+@media screen and (max-width: 500px) 
+{
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+form
+{
+    text-align: center;
+    background-color:darkcyan;
+    display: block;
+    width: 100%;
+    margin: 3px;
+    word-spacing: 1px;
+    line-height: 90px;
+    background-image: none;
+
+}
+img.user
+{
+    width: 40%;
+    border-radius: 50%;
+    padding: 16px;
+    
+}  
+input[type=email], input[type=password]
+{
+    font-size: 20px;
+    width: 30%;
+    padding: 14px, 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 20px, solid,red;
+    
+    
+}
+button
+{
+    background-color: violet;
+    color: whitesmoke;
+    padding: 12px, 20px;
+    margin: 8px, 0;
+    border-radius: 10px;
+    font-size: large;
+    width: 10%;
+    cursor: pointer;
+}
+button:hover
+{
+    opacity: 0.8;
 }
